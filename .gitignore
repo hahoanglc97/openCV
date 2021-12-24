@@ -127,5 +127,6 @@ dmypy.json
 # Pyre type checker
 .pyre/
 video/
+image/test/
 .idea/
 .DS_Store

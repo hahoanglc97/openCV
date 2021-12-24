@@ -1,0 +1,25 @@
+absl-py==1.0.0
+attrs==21.2.0
+comtypes==1.1.10
+cycler==0.11.0
+enum34==1.1.10
+fonttools==4.28.5
+future==0.18.2
+importlib-metadata==3.4.0
+kiwisolver==1.3.2
+matplotlib==3.5.1
+mediapipe==0.8.9.1
+numpy==1.21.5
+opencv-contrib-python==4.5.4.60
+opencv-python==4.5.4.60
+osascript==2020.12.3
+packaging==21.3
+Pillow==8.4.0
+protobuf==3.19.1
+psutil==5.8.0
+pycaw @ https://github.com/AndreMiras/pycaw/archive/develop.zip
+pyparsing==3.0.6
+python-dateutil==2.8.2
+runcmd==2020.12.3
+six==1.16.0
+zipp==0.0.0
