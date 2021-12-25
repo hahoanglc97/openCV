@@ -18,6 +18,7 @@ Pillow==8.4.0
 protobuf==3.19.1
 psutil==5.8.0
 pycaw @ https://github.com/AndreMiras/pycaw/archive/develop.zip
+pyalsaaudio==0.9.0
 pyparsing==3.0.6
 python-dateutil==2.8.2
 runcmd==2020.12.3
