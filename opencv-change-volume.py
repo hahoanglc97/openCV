@@ -1,9 +1,8 @@
+from sys import platform
 import os
 import time
 import lib.hand as htm
 import math
-import osascript
-
 import cv2
 import numpy as np
 
@@ -37,7 +36,18 @@ while True:
         length = math.hypot(x2 - x1, y2 - y1)
         vol = np.interp(length, [25, 230], [0, 100])
         volBar = np.interp(length, [25, 230], [400, 150])
-        osascript.osascript("set volume output volume {}".format(vol))
+        if platform == "linux":
+            import alsaaudio
+            m = alsaaudio.Mixer()
+            current_volume = m.getvolume() # Get the current Volume
+            m.setvolume(int(vol)) # Set the volume to 70%.
+            pass
+        elif platform == "darwin":
+            import osascript
+            osascript.osascript("set volume output volume {}".format(vol))
+        elif platform == "win32":
+            pass
+
         if length < 25:
             cv2.circle(frame, (cx, cy), 15, (255, 100, 200), -1)
 
